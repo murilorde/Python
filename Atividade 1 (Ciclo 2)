@@ -1,0 +1,11 @@
+def calcular(dias):
+    anos = dias // 365
+    meses = (dias % 365) // 30
+    dias = (dias % 365) % 30
+
+    return anos, meses, dias
+
+idade = int(input("Digite a idade em dias: "))
+anos, meses, dias = calcular(idade)
+
+print(f"A idade é {anos} anos, {meses} meses e {dias} dias.")
